@@ -6,24 +6,20 @@ public class Ordenacao {
 		new Ordenacao().ordenar(vet);
 	}
 
-	public void ordenar(int[] vet) {
+	public int[]  ordenar(int[] vetorInicial) {
 		int recebeValor = 0;
 		
-		for (int i = 0; i < vet.length; i++) {
-			for (int j = 0; j < vet.length - 1; j++) {
-				if (vet[j] > vet[j + 1]) {
-					recebeValor = vet[j];
-					vet[j] = vet[j + 1];
-					vet[j + 1] = recebeValor;
+		for (int i = 0; i < vetorInicial.length; i++) {
+			for (int j = 0; j < vetorInicial.length - 1; j++) {
+				if (vetorInicial[j] > vetorInicial[j + 1]) {
+					recebeValor = vetorInicial[j];
+					vetorInicial[j] = vetorInicial[j + 1];
+					vetorInicial[j + 1] = recebeValor;
 				}
 			}
-		}
+		} 
 		
-		System.out.println("Vetor organizado:");
-
-		for (int i = 0; i < vet.length; i++) {
-			System.out.println(" " + vet[i]);
-		}
+		return vetorInicial ;
 	}
 }
 
