@@ -10,6 +10,13 @@ public class Votos {
 	public static void main(String[] args) {
 
 		try {
+			
+
+			System.out.println("Total de Eleitores: "+totalEleitores);
+			System.out.println("Total de Votos Validos:"+votosValidos);
+			System.out.println("Total de Votos Brancos:"+votosBrancos);
+			System.out.println("Total de Votos Nulos:"+nulos);
+			
 			System.out.println(new Votos().percentualVotosValidos(votosValidos, totalEleitores) + "% Percentual Votos Validos ");
 
 			System.out.println(new Votos().percentualVotosBrancos(votosBrancos, totalEleitores) + "% Percentual Votos Brancos");
